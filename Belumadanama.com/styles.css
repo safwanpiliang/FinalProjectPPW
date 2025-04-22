@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 30px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    color: #E9E9E9;
+    z-index: 1000;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #E9E9E9;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 600;
+    color: #E9E9E9;
+    text-decoration: none;
+  }
+  
+  .logo span {
+    font-weight: 300;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right a {
+    margin-left: 20px;
+    color: #E9E9E9;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right a.icon {
+    font-size: 20px;
+  }
+  
+  .navbar-right a:hover {
+    color: #E9E9E9;
+  }
+  
+  /* HERO SECTION */
+  .hero {
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(180deg, rgba(24, 24, 24, 0.00) 70%, rgba(24, 24, 24, 0.50) 85%, #000 100%),
+    url('assets/HERO_IMAGE.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .hero-content h1 {
+    color: #E9E9E9;
+    text-align: center;
+    text-shadow: 0px 0px 35px #000;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content button {
+    display: inline-flex;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: #E9E9E9;
+    color: #181818;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    outline: none;
+  }
+
+/* Sec2 SECTION */
+.content-section {
+    display: flex;
+    background-color: #E9E9E9;
+    overflow: hidden;
+  }
+
+  .content-section-kiri {
+    display: flex;
+    width: 50vw;
+    height: 582px;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    margin-left: 49px;
+    margin-top: 49px;
+    margin-right: 18px;
+    margin-bottom: 18px;
+  }
+
+  .content-section-kiri-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+  }
+
+  .content-section h1 {
+    width: 471px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .content-section h2 {
+    align-self: stretch;
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .content-section p {
+    width: 471px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  .content-section button {
+    display: flex;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: #181818;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    outline: none;
+  }
+
+  .content-section-kiri-2 {
+    display: flex;
+    width: 471px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .content-section-kanan {
+    display: flex;
+    width: 582px;
+    height: 582px;
+    margin-right: 49px;
+    margin-top: 49px;
+    margin-bottom: 18px;
+  }
+
+/* Sec3 SECTION */
+.content-section2 {
+    display: flex;
+    background-color: #E9E9E9;
+    overflow: hidden;
+  }
+
+  .kotakpanjang {
+    width: 420px;
+    height: 189px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-left: 49px;
+  }
+
+  .kotakpanjang img {
+    width: 100%;         
+    height: 100%;       
+    object-fit: cover;   
+    display: block;
+  }
+
+  .kotakpanjang1 {
+    display: flex;
+    width: 382px;
+    height: 188px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    margin-left: 49px;
+  }
+
+  .content-section2 h2 {
+    align-self: stretch;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .content-section2 button {
+    display: inline-block;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: #181818;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    outline: none;
+  }
+
+/* Sec4 SECTION */
+.content-section3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #e9e9e9;
+    padding: 20px;
+  }
+  
+  .content-section3 h1 {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-left: 49px;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .persegi {
+    width: 382px;
+    height: 382px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 49px;
+  }
+  
+  .persegi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .persegi::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* atau atur sesuai kebutuhan */
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.00) 45.94%, rgba(0, 0, 0, 0.75) 100%);
+  }
+
+  .text-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    z-index: 1;
+  }
+  
+  .judul {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  
+  .items {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  .kotakputih {
+    width: 100vw;
+    height: 382px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    margin-top: 20px;
+    margin-left: 49px;
+  }
+
+  .content-section3 button {
+    display: flex;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: #181818;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
